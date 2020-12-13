@@ -389,12 +389,12 @@ Thank you：
 ```
 接口测试平台：
 ```text
-接口测试平台：http://www.chenshengkai.com:8080
+接口测试平台：http://121.199.78.187
 账号：ceshi
 密码：123456
 需要部署接口测试平台的朋友可以联系我，耐心给您解答！
 ```
 更多关于我
 ```text
- http://www.chenshengkai.com
+ https://www.chenshengkai.com
 ```
