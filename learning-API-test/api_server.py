@@ -9,7 +9,7 @@ from flask import request
 from flask import session
 from flask import escape
 from werkzeug.utils import secure_filename
-from Crypto.Cipher import AES  # 请安装 Crypto
+# from Crypto.Cipher import AES  # 请安装 Crypto
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 UPLOAD_FOLDER = BASE_PATH + '/uploads'
