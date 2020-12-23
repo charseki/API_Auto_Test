@@ -1,14 +1,12 @@
-import json
-import os
 import base64
 import hashlib
+import json
+import os
 import time
-from flask import Flask
-from flask import jsonify
-from flask import request
-from flask import session
-from flask import escape
+
+from flask import Flask, escape, jsonify, request, session
 from werkzeug.utils import secure_filename
+
 # from Crypto.Cipher import AES  # 请安装 Crypto
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
