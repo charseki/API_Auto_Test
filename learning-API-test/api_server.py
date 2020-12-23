@@ -333,22 +333,22 @@ def decryptBase64(src):
 #     return unpad(text)
 
 
-@app.route('/aes/', methods=['GET', 'POST'])
-def post_aes():
-    if request.method == 'POST':
-        data = request.form.get('data')  # AES加密的数据
+# @app.route('/aes/', methods=['GET', 'POST'])
+# def post_aes():
+#     if request.method == 'POST':
+#         data = request.form.get('data')  # AES加密的数据
 
-        if data is None or data == "":
-            return jsonify({"code": 10102, "message": "data is None"})
+#         if data is None or data == "":
+#             return jsonify({"code": 10102, "message": "data is None"})
 
-        # 解密
-        decode = decryptAES(data)
-        # 转化为字典
-        dict_data = json.loads(decode)
-        return jsonify({"code": 10200, "message": "success", "data": dict_data})
+#         # 解密
+#         decode = decryptAES(data)
+#         # 转化为字典
+#         dict_data = json.loads(decode)
+#         return jsonify({"code": 10200, "message": "success", "data": dict_data})
 
-    else:
-        return jsonify({"code": 10101, "message": "request method error"})
+#     else:
+#         return jsonify({"code": 10101, "message": "request method error"})
 
 
 ############ end #############
