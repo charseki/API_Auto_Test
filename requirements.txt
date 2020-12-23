@@ -8,7 +8,6 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
 ParamUnittest==0.2
-pycryptodome==3.7.3
 PyEmail==0.0.1
 pytz==2020.1
 requests==2.22.0
