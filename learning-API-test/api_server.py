@@ -321,16 +321,16 @@ def decryptBase64(src):
     return base64.urlsafe_b64decode(src)
 
 
-def decryptAES(src):
-    """
-    解析AES密文
-    """
-    src = decryptBase64(src)
-    key = b'W7v4D60fds2Cmk2U'
-    iv = b"1172311105789011"
-    cryptor = AES.new(key, AES.MODE_CBC, iv)
-    text = cryptor.decrypt(src).decode()
-    return unpad(text)
+# def decryptAES(src):
+#     """
+#     解析AES密文
+#     """
+#     src = decryptBase64(src)
+#     key = b'W7v4D60fds2Cmk2U'
+#     iv = b"1172311105789011"
+#     cryptor = AES.new(key, AES.MODE_CBC, iv)
+#     text = cryptor.decrypt(src).decode()
+#     return unpad(text)
 
 
 @app.route('/aes/', methods=['GET', 'POST'])
